@@ -12,7 +12,7 @@ Node.js, PHP, TypeScript, React and MongoDB.
 
 ---
 
-## 🛠️ Tech Stack Covered
+## 🛠️ Tech Stack Covered 
 
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
