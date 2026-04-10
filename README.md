@@ -8,7 +8,7 @@ Stack Developer with 7+ years of experience in Angular,
 Node.js, PHP, TypeScript, React and MongoDB.
 
 > This repository is for the community. Follow along, 
-> learn from the structure, and use the resources.
+> learn from the structure, and use the resources. 
 
 ---
 
