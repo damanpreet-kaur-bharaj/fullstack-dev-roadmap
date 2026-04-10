@@ -26,7 +26,7 @@ Node.js, PHP, TypeScript, React and MongoDB.
 
 ## 🗺️ Roadmap — Module Breakdown
 
-| Module | Topic | Status |
+| Module | Topic |
 |--------|-------|--------|
 | 1 | HTML + CSS — Fundamentals & Layout |
 | 2 | JavaScript — Core Concepts & ES6+ |
@@ -42,7 +42,7 @@ Node.js, PHP, TypeScript, React and MongoDB.
 Each module produces a real deployable project.
 All projects will be live with demo links.
 
-| # | Project | Tech Stack | Status | Live Demo |
+| # | Project | Tech Stack | Live Demo |
 |---|---------|-----------|--------|-----------|
 | 1 | Portfolio Website | HTML + CSS + JS |
 | 2 | JavaScript Quiz App | Vanilla JS |
