@@ -1,0 +1,53 @@
+/* === Variables === */
+:root {
+    --primary: #0A1628;
+    --accent: #C9A84C;
+    --bg: #f4f6f9;
+    --white: #ffffff;
+    --text: #333333;
+    --text-light: #666666;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+/* === Reset === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* === Layout === */
+body { background: var(--bg); font-family: 'Segoe UI', Arial, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+.container { padding: 24px; width: 100%; max-width: 480px; }
+
+/* === Card Component === */
+.card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 36px 32px; text-align: center; }
+
+.card__avatar { width: 80px; height: 80px; border-radius: 50%; background: var(--primary); color: var(--accent); font-size: 28px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+
+.card__name { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+
+.card__role { font-size: 14px; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+
+.card__location { font-size: 13px; color: var(--text-light); margin-bottom: 20px; }
+
+/* === Skills === */
+.card__skills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 24px; }
+
+.skill { background: #f0f4ff; color: var(--primary); font-size: 12px; font-weight: 600; padding: 5px 14px; border-radius: 20px; }
+
+/* === Buttons === */
+.card__links { display: flex; gap: 12px; justify-content: center; }
+
+.btn { padding: 10px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; background: var(--primary); color: var(--white); transition: opacity 0.2s; }
+
+.btn:hover { opacity: 0.85; }
+
+.btn--outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+
+.btn--outline:hover { background: var(--primary); color: var(--white); }
+
+/* === Responsive === */
+@media (max-width: 480px) {
+    .card { padding: 28px 20px; }
+    .card__name { font-size: 18px; }
+    .card__links { flex-direction: column; }
+}
