@@ -1,0 +1,159 @@
+/* === Variables === */
+:root {
+    --primary: #0A1628;
+    --accent: #C9A84C;
+    --bg: #f0f2f5;
+    --white: #ffffff;
+    --danger: #e74c3c;
+    --text: #2c3e50;
+    --text-light: #7f8c8d;
+    --radius: 10px;
+}
+
+/* === Reset === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Body === */
+body {
+    background: var(--bg);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: var(--text);
+}
+
+/* === Container === */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* === Header === */
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.header__title {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.header__sub {
+    font-size: 15px;
+    color: var(--text-light);
+}
+
+/* === Input Section === */
+.input-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.input {
+    flex: 1;
+    padding: 14px 18px;
+    border: 2px solid #dde1e7;
+    border-radius: var(--radius);
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    border-color: var(--accent);
+}
+
+.btn {
+    padding: 14px 28px;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #1a2f4a;
+}
+
+/* === Stats === */
+.stats {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.stats span {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 18px;
+}
+
+/* === Skill Grid === */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+/* === Empty Message === */
+.empty-msg {
+    color: var(--text-light);
+    font-size: 14px;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* === Skill Card === */
+.skill-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    text-align: center;
+    border-left: 4px solid var(--accent);
+    position: relative;
+    transition: transform 0.15s;
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+}
+
+.skill-card__name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 12px;
+    word-break: break-word;
+}
+
+.skill-card__delete {
+    background: none;
+    border: 1px solid #dde1e7;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    color: var(--danger);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.skill-card__delete:hover {
+    background: var(--danger);
+    color: var(--white);
+    border-color: var(--danger);
+}
